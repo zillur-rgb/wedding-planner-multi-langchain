@@ -27,8 +27,8 @@ main_wedding_planner_agent = create_agent(model=ollama_model,
 
 #invoke main agent
 logging.info("invoking main wedding planner agent...")
-main_wedding_planner_agent.invoke({"messages": [HumanMessage(content=USER_PROMPT_FOR_MAIN_AGENT)]})
+response_main_agent = main_wedding_planner_agent.invoke({"messages": [HumanMessage(content=USER_PROMPT_FOR_MAIN_AGENT)]})
 
 # printing the response of the main agent
 print("\nMain wedding planner agent's response: ")
-print(main_wedding_planner_agent["message"][-1])
+print(response_main_agent["message"][-1])
