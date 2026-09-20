@@ -7,7 +7,11 @@ authors = [
     { name = "zill-mint", email = "zillurdeu@gmail.com" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "dotenv>=0.9.9",
+    "langchain>=1.4.2",
+    "langchain-openai>=1.6.2",
+]
 
 [project.scripts]
 wedding-planner-multi-langchain = "wedding_planner_multi_langchain:main"
